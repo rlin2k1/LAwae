@@ -1,0 +1,70 @@
+<!--
+ Copyright 2016 Google Inc.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAwae</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+
+  <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">"Do You Know" LAwae</h1>
+    <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
+    <button id="butAdd" class="headerButton" aria-label="Add"></button>
+  </header>
+
+    <div id="map"></div>
+    <script src='scripts/mapRender.js'>
+         </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChzgjtE9YlgnIUyum3YHT3gAnzEvQ5wmA&callback=initMap"
+    async defer></script>
+
+ <div class="sidenav">
+  <a href="#Blank">Blank</a>
+  <a href="#Get The Way">Get The Way</a>
+  <a href="#About The Way">About The Way</a>
+  <a href="#Settings">Settings</a>
+  
+</div>
+
+
+  
+
+
+
+</body>
+</html>
