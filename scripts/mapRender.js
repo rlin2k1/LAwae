@@ -10,9 +10,6 @@ function success(pos) {   //call back for getCurrentPosition, will change lat an
 
 navigator.geolocation.getCurrentPosition(success)
 
-
-
-
  function initMap()  //renders actual map
  {
     map = new google.maps.Map(document.getElementById('map'), 
@@ -20,4 +17,33 @@ navigator.geolocation.getCurrentPosition(success)
         center: new google.maps.LatLng(lat, long),
         zoom: 14
     });
-      }
+
+
+
+        var currentLocationMarker = new google.maps.Marker({
+          position: {lat: lat, lng: long},
+          map: map
+        });
+
+
+        var marker = new google.maps.Marker({
+        	position: {lat: 34.0626647, lng: -118.4472813},
+        	map: map
+        });
+
+         var flightPlanCoordinates = [
+    {lat: lat, lng: long},
+    {lat: 34.0626647, lng: -118.4472813},
+
+  ];
+
+  //  var flightPath = new google.maps.Polyline({
+  //   path: flightPlanCoordinates,
+  //   geodesic: true,
+  //   strokeColor: '#FF0000',
+  //   strokeOpacity: 1.0,
+  //   strokeWeight: 2
+  // });
+}
+
+

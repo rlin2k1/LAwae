@@ -1,0 +1,3 @@
+setuptools
+cherrypy
+requests_oauthlib
